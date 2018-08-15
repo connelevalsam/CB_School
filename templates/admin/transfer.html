@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{ template "_head.html" }}
+<body> <!-- onload="hideDivs()"> -->
+<main class="w-100 flex flex-column min-vh-100">
+{{ template "_header.html" }}
+
+    <section class="w-100 tc">
+		<div class="w-70 dib pt2 pt4-ns">
+			<form method="post" action="/transfer">
+				<!-- select school -->
+				<div>
+					<label>Transfering from {this school} </label>
+				</div>
+				<div>
+					<select size="1" name="ranks" class="w-100 br2 b--black-10 pv2 mv2">
+						<option disabled>Select to School</option>
+						<option>City University</option>
+						<option>University Of Chow</option>
+						<option>Cb University</option>
+					</select>
+				</div>
+				<!-- select lecturer -->
+				<div>
+					<select size="1" name="ranks" class="w-100 br2 b--black-10 pv2 mv2">
+						<option disabled>Select Lecturer From ...</option>
+						<option>Okon</option>
+						<option>Bassey</option>
+					</select>
+				</div>
+				<div>
+					<select size="1" name="ranks" class="w-100 br2 b--black-10 pv2 mv2">
+						<option disabled>Select Lecturer to ...</option>
+						<option>Okon</option>
+						<option>Bassey</option>
+					</select>
+				</div>
+				<div class="pv2"><a class="f5 fw6 bg-green dib ba b--black-20 ph4 pv3 br2 grow no-underline link pointer white">Transfer</a></div>
+			</form>
+		</div>
+	</section>
+    </main>
+</body>
+</html>

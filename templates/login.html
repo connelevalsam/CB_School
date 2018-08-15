@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ template "head" .}}
+<body class="w-100">
+<main class="flex flex-column min-vh-100">
+    <header class="w-100 bg-light-gray pv2 ph2 ph5-ns tc">
+        <div class="w-100 w-50-ns dib">
+            <a class="f1 fw3 fw6-ns hover-blue link pointer black-80 dib" href="/">Staff Manager</a>
+        </div><div class="w-100 w-50-ns dib tc">
+        <h1>Login</h1>
+    </div>
+    </header>
+
+    <section class="w-100 flex-auto flex flex-column flex-row-ns">
+        <div class="w-100">
+            <form class="animate bg-light-grey" name="login-form" action="/login" method="post">
+                <div class="tc ph2 ph4-ns">
+                    <input type="text" class="w-50 br2 b--black-10 pv2 mv2" placeholder="enter username" name="username" required><br>
+
+                    <input type="password" class="w-50 br2 b--black-10 pv2 mv2" placeholder="enter password" name="password" required><br>
+
+                    <button type="submit" class="pointer grow bg-green white bn br2 pa2 mh2 login-button">Login</button>
+                    <input type="checkbox" checked="checked"> Remember me
+                </div>
+                <div class="tc pt pt4-ns">
+                    <span class="br2 b--black-10 pv2 mh2">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>

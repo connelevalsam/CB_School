@@ -1,0 +1,81 @@
+2018/07/04 21:45:25 pq: syntax error at end of input
+2018/07/04 23:51:02 http: multiple response.WriteHeader calls
+2018/07/04 23:51:58 http: multiple response.WriteHeader calls
+2018/08/15 14:12:00 http: panic serving [::1]:37950: runtime error: invalid memory address or nil pointer dereference
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc420150280)
+	/usr/local/go/src/net/http/server.go:1721 +0xd0
+panic(0x75e560, 0x977590)
+	/usr/local/go/src/runtime/panic.go:489 +0x2cf
+database/sql.(*DB).conn(0x0, 0x954260, 0xc420010430, 0xc420053a01, 0x64a5aa, 0xc42000ba00, 0x0)
+	/usr/local/go/src/database/sql/sql.go:896 +0x3a
+database/sql.(*DB).query(0x0, 0x954260, 0xc420010430, 0x7d57c9, 0x36, 0xc420053bd8, 0x1, 0x1, 0x1, 0xc420034c00, ...)
+	/usr/local/go/src/database/sql/sql.go:1245 +0x5b
+database/sql.(*DB).QueryContext(0x0, 0x954260, 0xc420010430, 0x7d57c9, 0x36, 0xc420053bd8, 0x1, 0x1, 0xc4201b5f70, 0xc420053bc8, ...)
+	/usr/local/go/src/database/sql/sql.go:1227 +0xb8
+database/sql.(*DB).Query(0x0, 0x7d57c9, 0x36, 0xc420053bd8, 0x1, 0x1, 0xc420053b48, 0x429b1f, 0x7d9450)
+	/usr/local/go/src/database/sql/sql.go:1241 +0x82
+github.com/connelevalsam/GoWebDev/GoLearning/SchoolWork/src/views.HandleLogin(0x953be0, 0xc42016a620, 0xc42000ba00)
+	/home/connelblaze/go/src/github.com/connelevalsam/GoWebDev/GoLearning/SchoolWork/src/views/views.go:116 +0x383
+net/http.HandlerFunc.ServeHTTP(0x7d8aa0, 0x953be0, 0xc42016a620, 0xc42000ba00)
+	/usr/local/go/src/net/http/server.go:1942 +0x44
+net/http.(*ServeMux).ServeHTTP(0x984840, 0x953be0, 0xc42016a620, 0xc42000ba00)
+	/usr/local/go/src/net/http/server.go:2238 +0x130
+net/http.serverHandler.ServeHTTP(0xc4201620b0, 0x953be0, 0xc42016a620, 0xc42000ba00)
+	/usr/local/go/src/net/http/server.go:2568 +0x92
+net/http.(*conn).serve(0xc420150280, 0x954220, 0xc420100600)
+	/usr/local/go/src/net/http/server.go:1825 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2668 +0x2ce
+2018/08/15 14:12:00 http: panic serving [::1]:38702: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1(0xc420150500)
+	/usr/local/go/src/net/http/server.go:1721 +0xd0
+panic(0x75e560, 0x977590)
+	/usr/local/go/src/runtime/panic.go:489 +0x2cf
+database/sql.(*DB).conn(0x0, 0x954260, 0xc420010430, 0xc42003fa01, 0x64a5aa, 0xc420106400, 0x0)
+	/usr/local/go/src/database/sql/sql.go:896 +0x3a
+database/sql.(*DB).query(0x0, 0x954260, 0xc420010430, 0x7d57c9, 0x36, 0xc42003fbd8, 0x1, 0x1, 0x1, 0x985460, ...)
+	/usr/local/go/src/database/sql/sql.go:1245 +0x5b
+database/sql.(*DB).QueryContext(0x0, 0x954260, 0xc420010430, 0x7d57c9, 0x36, 0xc42003fbd8, 0x1, 0x1, 0xc420104c80, 0xc42003fbc8, ...)
+	/usr/local/go/src/database/sql/sql.go:1227 +0xb8
+database/sql.(*DB).Query(0x0, 0x7d57c9, 0x36, 0xc42003fbd8, 0x1, 0x1, 0xc42003fb48, 0x429b1f, 0x7d9450)
+	/usr/local/go/src/database/sql/sql.go:1241 +0x82
+github.com/connelevalsam/GoWebDev/GoLearning/SchoolWork/src/views.HandleLogin(0x953be0, 0xc4201701c0, 0xc420106400)
+	/home/connelblaze/go/src/github.com/connelevalsam/GoWebDev/GoLearning/SchoolWork/src/views/views.go:116 +0x383
+net/http.HandlerFunc.ServeHTTP(0x7d8aa0, 0x953be0, 0xc4201701c0, 0xc420106400)
+	/usr/local/go/src/net/http/server.go:1942 +0x44
+net/http.(*ServeMux).ServeHTTP(0x984840, 0x953be0, 0xc4201701c0, 0xc420106400)
+	/usr/local/go/src/net/http/server.go:2238 +0x130
+net/http.serverHandler.ServeHTTP(0xc4201620b0, 0x953be0, 0xc4201701c0, 0xc420106400)
+	/usr/local/go/src/net/http/server.go:2568 +0x92
+net/http.(*conn).serve(0xc420150500, 0x954220, 0xc420100a40)
+	/usr/local/go/src/net/http/server.go:1825 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2668 +0x2ce
+2018/08/15 14:12:16 http: panic serving [::1]:38840: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc4200d0dc0)
+	/usr/local/go/src/net/http/server.go:1721 +0xd0
+panic(0x75e560, 0x977590)
+	/usr/local/go/src/runtime/panic.go:489 +0x2cf
+database/sql.(*DB).conn(0x0, 0x954260, 0xc420010430, 0xc42003ea01, 0x64a5aa, 0xc42000bb00, 0x0)
+	/usr/local/go/src/database/sql/sql.go:896 +0x3a
+database/sql.(*DB).query(0x0, 0x954260, 0xc420010430, 0x7d57c9, 0x36, 0xc42003ebd8, 0x1, 0x1, 0x1, 0x985460, ...)
+	/usr/local/go/src/database/sql/sql.go:1245 +0x5b
+database/sql.(*DB).QueryContext(0x0, 0x954260, 0xc420010430, 0x7d57c9, 0x36, 0xc42003ebd8, 0x1, 0x1, 0xc420104d50, 0xc42003ebc8, ...)
+	/usr/local/go/src/database/sql/sql.go:1227 +0xb8
+database/sql.(*DB).Query(0x0, 0x7d57c9, 0x36, 0xc42003ebd8, 0x1, 0x1, 0xc42003eb48, 0x429b1f, 0x7d9450)
+	/usr/local/go/src/database/sql/sql.go:1241 +0x82
+github.com/connelevalsam/GoWebDev/GoLearning/SchoolWork/src/views.HandleLogin(0x953be0, 0xc4201702a0, 0xc42000bb00)
+	/home/connelblaze/go/src/github.com/connelevalsam/GoWebDev/GoLearning/SchoolWork/src/views/views.go:116 +0x383
+net/http.HandlerFunc.ServeHTTP(0x7d8aa0, 0x953be0, 0xc4201702a0, 0xc42000bb00)
+	/usr/local/go/src/net/http/server.go:1942 +0x44
+net/http.(*ServeMux).ServeHTTP(0x984840, 0x953be0, 0xc4201702a0, 0xc42000bb00)
+	/usr/local/go/src/net/http/server.go:2238 +0x130
+net/http.serverHandler.ServeHTTP(0xc4201620b0, 0x953be0, 0xc4201702a0, 0xc42000bb00)
+	/usr/local/go/src/net/http/server.go:2568 +0x92
+net/http.(*conn).serve(0xc4200d0dc0, 0x954220, 0xc42019cc00)
+	/usr/local/go/src/net/http/server.go:1825 +0x612
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2668 +0x2ce

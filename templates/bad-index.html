@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>{{ .Title }}</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="/assets/css/tachyons.css">
+		<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+		<style type="text/css">
+			.transition-transform { 
+			  transition: transform 0.5s ease-in;
+			}
+			.transform-off { 
+			  transform: translate3d( 100%, 0, 0 );
+			}
+
+			@media screen and (min-width: 60em) {
+			 .transform-off { 
+			   transform: none; 
+			  }
+
+			}
+		</style>
+	</head>
+<body class="w-100">
+<main class="w-100 contents">
+	{{ template "header"}}
+	<section class="w-100 vh-75 tc cover" style="background: url(../assets/img/classroom.jpg);">
+		<div class="dib mt6 pt4">
+			<span class="db white f1 Helvetica Neue fw6">CB University</span>
+			<span class="white fw6">Best in Africa</span>
+			<hr>
+		</div>
+	</section>
+	<footer class="w-100 tc bg-light-grey">
+		<div class="mt5-ns mb2-ns">
+			<a class="f6 fw3 fw6-ns hover-blue link pointer black-80 mr2 mr3-ns dib" href="/">Home</a>
+			<a href="/about" class="f6 fw3 fw6-ns hover-blue link pointer black-80 mr2 mr3-ns dib">About</a>
+			<a href="/login" class="f6 fw3 fw6-ns hover-blue link pointer black-80 mr2 mr3-ns dib">Login</a>
+		</div>
+		<div>
+			<span><small>© 2018</small> <a>cb_net</a></span>
+		</div>
+	</footer>
+</main>
+<script type="text/javascript" src="../assets/js/main.js"></script>
+</body>
+</html>

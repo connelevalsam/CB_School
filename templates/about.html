@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+{{ template "head" .}}
+<body class="w-100">
+<main class="w-100">
+	{{ template "header"}}
+	<section class="contents w-100 tc">
+		<div class="dib vh-25 tc cover" style="background: url(../assets/img/classroom.jpg);">
+			<span class="db white f1 Helvetica Neue fw6">CB University</span>
+			<span class="white fw6">Best in Africa</span>
+			<hr>
+		</div>
+		<div class="tc bg-light-gray ph2">
+			<h2>More about us...</h2>
+		</div>
+	</section>
+	<footer class="w-100 tc bg-light-gray">
+		<div class="mt5-ns mb2-ns">
+			<a class="f6 fw3 fw6-ns hover-blue link pointer black-80 mr2 mr3-ns dib" href="/">Home</a>
+			<a href="/about" class="f6 fw3 fw6-ns hover-blue link pointer black-80 mr2 mr3-ns dib">About</a>
+			<a href="/login" class="f6 fw3 fw6-ns hover-blue link pointer black-80 mr2 mr3-ns dib">Login</a>
+		</div>
+		<div>
+			<span><small>© 2018</small> <a>cb_net</a></span>
+		</div>
+	</footer>
+</main>
+{{ template "scripts"}}
+</body>
+</html>
